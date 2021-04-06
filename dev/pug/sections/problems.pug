@@ -1,0 +1,17 @@
+section.g-section.g-section--green
+	.container
+		.problems
+			.problems__info
+				.g-title-wrap
+					h2.g-title.g-title--white С какими проблемами <br> можем помочь?
+				.problems__items
+					each key in problems
+						.problems__item
+							img(src=key.imgUrl, alt=key.title)
+							h6=key.title
+							p=key.descr
+			.problems__aside
+				.problems__wave
+					each key in Array(3)
+						img(src="./web/images/general/transparent-wave.svg")
+				img(src="./web/images/general/middle-bottle.png").problems__bottle
