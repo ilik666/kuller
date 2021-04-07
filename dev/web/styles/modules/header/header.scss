@@ -5,4 +5,8 @@
 	right: 0;
 	z-index: 5;
 	padding: 3rem 0;
+	@media screen and (max-width: 991px) {
+		position: relative;
+		padding: 1rem 0;
+	}
 }

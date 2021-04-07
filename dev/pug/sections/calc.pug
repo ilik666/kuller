@@ -8,10 +8,20 @@ section.g-section
 			.calc__col
 				label
 					span Количество кулеров:
-					input(type="text")
+					input(type="text" data-calc='true' data-type='COOLER_PRICE' value=' шт')
 				label
 					span Количество бутылей:
-					input(type="text")
+					input(type="text" data-calc='true' data-type='BOTTLE_PRICE' value=' шт')
 				
-				img(src="./web/images/general/green-wave.svg").g-wave
+			
+			.calc__col
+				.price =
+					span.rub.current-price 0
 
+			.calc__col
+				.calc__next-price
+					span Каждое следующее<br> пополнение:
+					span.rub.next-price 0
+
+		
+		img(src="./web/images/general/big-green-wave.svg").g-wave.calc-wave
